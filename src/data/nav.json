@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Бургеры",
+    "id": 1,
+    "images": null
+  },
+  {
+    "title": "Закуски",
+    "id": 2,
+    "images": null
+  },
+  {
+    "title": "Хот-доги",
+    "id": 3,
+    "images": null
+  },
+  {
+    "title": "Комбо",
+    "id": 4,
+    "images": null
+  },
+  {
+    "title": "Шаурма",
+    "id": 5,
+    "images": null
+  },
+  {
+    "title": "Пицца",
+    "id": 6,
+    "images": null
+  },
+  {
+    "title": "Вок",
+    "id": 7,
+    "images": null
+  },
+  {
+    "title": "Десерты",
+    "id": 8,
+    "images": null
+  },
+  {
+    "title": "Соусы",
+    "id": 9,
+    "images": null
+  }
+]

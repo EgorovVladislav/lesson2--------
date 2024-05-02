@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  background-color: #F9F9F9;
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .wrapper_content {
+    display: flex;
+    max-width: 1295px;
+    width: 100%;
+    min-height: 854px;
+    height: 100%;
+    justify-content: space-between;
+  }
+}

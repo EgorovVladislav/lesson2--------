@@ -1,0 +1,17 @@
+.containerCard {
+  width: 300px;
+  height: 411px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: white;
+  border-radius: 18px;
+  .wrapperImages {
+    width: 276px;
+    height: 387px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  min-height: 244px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  .content {
+    max-width: 1295px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .info {
+      width: 300px;
+      height: 153px;
+      img {
+        margin-bottom: 59px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .number {
+      width: 204px;
+      height: 72px;
+      .num {
+        margin-bottom: 24px;
+        font-size: 24px;
+      }
+      p {
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 4px;
+        }
+        font-size: 16px;
+      }
+    }
+    .networks {
+      width: 164px;
+      height: 82px;
+      p {
+        margin-bottom: 24px;
+        font-size: 24px;
+      }
+      a {
+        margin-right: 16px;
+      }
+    }
+  }
+}

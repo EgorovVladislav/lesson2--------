@@ -1,0 +1,54 @@
+.container {
+  max-width: 300px;
+  width: 100%;
+  min-height: 467px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  .container_basket {
+    max-width: 268px;
+    width: 100%;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f3;
+    input {
+      width: 41px;
+      height: 20px;
+      background-color: #f2f2f3;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      color: black;
+    }
+  }
+  .cards {
+    height: 330px;
+  }
+  .total {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+    justify-content: space-between;
+    p {
+      font-size: 16px;
+    }
+    input {
+      height: 100%;
+      text-align: end;
+      border: none;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+    }
+    .totalPrice {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
