@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Начос",
+    "price": "250₽",
+    "gramm": "220г",
+    "id": 1,
+    "images": null
+  },
+  {
+    "title": "Картошка фри",
+    "price": "245₽",
+    "gramm": "180г",
+    "id": 2,
+    "images": null
+  },
+  {
+    "title": "Луковые кольца",
+    "price": "230₽",
+    "gramm": "160г",
+    "id": 3,
+    "images": null
+  }
+]

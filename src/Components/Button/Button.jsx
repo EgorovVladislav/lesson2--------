@@ -1,6 +1,13 @@
 import style from "./Button.module.scss";
 
-export default function Button({ content, color, colorText, width, onClick }) {
+export default function Button({
+  content,
+  color,
+  colorText,
+  width,
+  hover,
+  onClick,
+}) {
   return (
     <div
       className={style.btn}

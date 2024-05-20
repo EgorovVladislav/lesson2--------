@@ -1,12 +1,12 @@
 import style from "./NavigationA.module.scss";
 
-export default function NavigationA({ title, images }) {
+export default function NavigationA({ title, images, index, editNavIndex }) {
   return (
     <div className={style.container}>
-      <a href="#" className={style.wrapperNav}>
+      <button className={style.wrapperNav} onClick={(e) => editNavIndex(index)}>
         <img src={images} alt="navigation" />
         <p>{title}</p>
-      </a>
+      </button>
     </div>
   );
 }

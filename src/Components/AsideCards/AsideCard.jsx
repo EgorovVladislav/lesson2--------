@@ -1,24 +1,8 @@
 import style from "./AsideCard.module.scss";
 import sup from "../../assets/burger.png";
-import Button from "../Button/Button";
 import Card from "../Card/Card";
-import { useState } from "react";
 
 export default function AsideCard({}) {
-  const [count, setCount] = useState(0);
-  function increase() {
-    setCount(count + 1);
-  }
-  function decrease() {
-    if (count < 1) {
-      return;
-    }
-    setCount(count - 1);
-  }
-  const [cartItems, setCartItems] = useState([]);
-  const handleAddToCart = (item) => {
-    setCartItems([...cartItems, item]);
-  };
   return (
     <div className={style.container}>
       <div className={style.container_order}>
@@ -31,9 +15,9 @@ export default function AsideCard({}) {
           </div>
         </div>
         <div className={style.container_input}>
-          <button onClick={decrease}>-</button>
-          <span>{count}</span>
-          <button onClick={increase}>+</button>
+          <button>-</button>
+          <span>{0}</span>
+          <button>+</button>
         </div>
       </div>
     </div>

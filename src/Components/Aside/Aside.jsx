@@ -1,5 +1,6 @@
 import style from "./Aside.module.scss";
 import Cards from "../AsideCards/AsideCard";
+import Card from "../Card/Card";
 import Button from "../Button/Button";
 
 export default function Aside() {
