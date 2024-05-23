@@ -7,13 +7,13 @@
   font-family: "Nunito Sans", sans-serif;
   background-color: white;
   border-radius: 18px;
-
+  margin: 10px;
   .wrapperImages {
     width: 276px;
     height: 387px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .containerCard:hover {

@@ -11,23 +11,28 @@ import burgers from "./data/burgers.json";
 import snacks from "./data/snacks.json";
 import hotDog from "./data/hot-dog.json";
 
-const arrProducts = [burgers, snacks, hotDog];
-
+const arrProducts = [
+  { title: "burgers", data: burgers },
+  { title: "snacks", data: snacks },
+  { title: "hotDog", data: hotDog },
+];
 export default function App() {
-  // const [cart, setCart] = useState(AddAside)
   const [activeNavIndex, setActiveNavIndex] = useState(0);
   const [activeItemModal, setActiveItemModal] = useState(null);
-  const [products, setProducts] = useState([
-    addImgData(arrProducts[activeNavIndex]),
-  ]);
+  const [products, setProducts] = useState(
+    addImgData(arrProducts[activeNavIndex])
+  );
 
   function editNavIndex(index) {
     setActiveNavIndex(index);
     setProducts(addImgData(arrProducts[index]));
+    setActiveItemModal(null);
   }
+
   function getDataActiveModal(id) {
     setActiveItemModal(products.find((item) => item.id === id));
   }
+
   return (
     <div className={style.container}>
       {activeItemModal && <Modal obj={activeItemModal} />}
@@ -35,7 +40,7 @@ export default function App() {
       <Nav editNavIndex={editNavIndex} />
       <div className={style.wrapper_content}>
         <Aside />
-        <Main getDataActiveModal={getDataActiveModal} />
+        <Main getDataActiveModal={getDataActiveModal} products={products} />
       </div>
       <Footer />
     </div>

@@ -3,11 +3,11 @@ import Card from "../Card/Card";
 import data from "../../data/burgers.json";
 import addImgData from "../../common/addDataImage";
 
-export default function Main({getDataActiveModal}) {
-  const newData = addImgData(data);
+export default function Main({getDataActiveModal, products}) {
+  // const newData = addImgData(data);
   return (
     <div className={style.container}>
-      {newData.map((item, index) => (
+      {products.map((item, index) => (
         <Card
         getDataActiveModal = {getDataActiveModal}
           images={item.images}

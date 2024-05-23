@@ -28,7 +28,7 @@ export default function Card({
         <h2>{title}</h2>
         <p>{price}</p>
         <p>{gramm}</p>
-        <div className={style.wrapperBtn}>
+        <div className={style.wrapperBtn} onClick={(e) => e.stopPropagation()}>
           <Button
             content="Добавить"
             color="#F2F2F3"

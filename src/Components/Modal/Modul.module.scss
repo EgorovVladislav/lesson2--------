@@ -24,18 +24,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      span {
+      .close {
         width: 60px;
         height: 30px;
         box-shadow: 0px 10 10px 10px rgba(0, 0, 0, 0.25);
         border-radius: 6px;
         background: #ff7020;
+        border: none;
         position: relative;
         display: block;
         cursor: pointer;
       }
-      span:before,
-      span:after {
+      .close:before,
+      .close:after {
         content: "";
         width: 20px;
         height: 4px;
@@ -46,12 +47,12 @@
         transform: rotate(45deg);
         transition: all 0.3s ease-out;
       }
-      span:after {
+      .close:after {
         transform: rotate(-45deg);
         transition: all 0.3s ease-out;
       }
-      span:hover:before,
-      span:hover:after {
+      .close:hover:before,
+      .close:hover:after {
         transform: rotate(180deg);
       }
     }

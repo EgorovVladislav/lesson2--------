@@ -1,6 +1,5 @@
 import style from "./AsideCard.module.scss";
 import sup from "../../assets/burger.png";
-import Card from "../Card/Card";
 
 export default function AsideCard({}) {
   return (
