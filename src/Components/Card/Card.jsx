@@ -37,12 +37,12 @@ export default function Card({
             onClick={handleAddToCart}
           />
         </div>
-        {isModalOpen && (
+        {/* {isModalOpen && (
           <Modal
             obj={{ images, title, price, gramm }}
             closeModal={() => setIsOpenModal(false)}
           />
-        )}
+        )} */}
       </div>
     </div>
   );

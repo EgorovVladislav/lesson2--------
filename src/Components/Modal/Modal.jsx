@@ -1,11 +1,11 @@
 import Button from "../Button/Button";
 import st from "./Modul.module.scss";
 
-export default function ({ obj, closeModal }) {
+export default function ({ activeItemModal, setActiveItemModal }) {
   const handleCloseModal = () => {
-    closeModal();
+    setActiveItemModal(false);
   };
-  const { title, price, gramm, images } = obj;
+  const { title, price, gramm, images } = activeItemModal;
   return (
     <div className={st.wrapper_modal}>
       <div className={st.modal}>
@@ -22,7 +22,7 @@ export default function ({ obj, closeModal }) {
         <div className={st.content}>
           <img src={images} alt="img" />
           <div className={st.description}>
-            <p> Цена: {obj.price}</p>
+            <p> Цена: {price}</p>
             <p>Вес: {gramm}</p>
           </div>
         </div>

@@ -18,7 +18,7 @@ const arrProducts = [
 ];
 export default function App() {
   const [activeNavIndex, setActiveNavIndex] = useState(0);
-  const [activeItemModal, setActiveItemModal] = useState(null);
+  const [activeItemModal, setActiveItemModal] = useState(false);
   const [products, setProducts] = useState(
     addImgData(arrProducts[activeNavIndex])
   );
@@ -26,7 +26,6 @@ export default function App() {
   function editNavIndex(index) {
     setActiveNavIndex(index);
     setProducts(addImgData(arrProducts[index]));
-    setActiveItemModal(null);
   }
 
   function getDataActiveModal(id) {
@@ -35,7 +34,7 @@ export default function App() {
 
   return (
     <div className={style.container}>
-      {activeItemModal && <Modal obj={activeItemModal} />}
+      {activeItemModal && <Modal activeItemModal={activeItemModal} setActiveItemModal={setActiveItemModal} />}
       <Header />
       <Nav editNavIndex={editNavIndex} />
       <div className={style.wrapper_content}>
